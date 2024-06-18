@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Button</title>
+</head>
+<body>
+    <div id="main">
+    <p><u>Simple colour changing Button</u></p> 
+    <button id="mybutton" onclick="myFunction()">Click me <br> change the background colour </button>
+    </div>
+    
+<style>
+button
+{
+    font-size: 50px;
+    border-radius:35px;
+    padding: 15px;
+}
+
+#main
+{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+p
+{
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+body
+{
+background-color:wheat;
+}
+</style>
+
+<script>
+    function myFunction() {
+        document.getElementById("mybutton").style.backgroundColor = "lightgreen";document.getElementById("mybutton").style.color= "black";
+      }
+</script>
+  
+</body>
+</html>

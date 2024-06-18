@@ -1,0 +1,42 @@
+.slideshow 
+{
+    display: flex;
+    overflow: hidden; 
+    position: relative; 
+    padding: 10px;
+}
+
+.sshow
+{
+    width: 100%; 
+    animation: fade 5s infinite alternate ease-in-out;
+}
+@keyframes fade
+{
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+.prev, .next 
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; } 
+
+.slideshow:hover .prev, .slideshow:hover .next 
+{
+    opacity: 1;
+}
